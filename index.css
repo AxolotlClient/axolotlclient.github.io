@@ -1,17 +1,24 @@
 
+html, body {
+}
 
 main {
     text-align:center;
-
+    min-height:90%;
+    margin-bottom: -100px;
 }
 
-title {
+header {
     text-align:center;
-    position:relative;
-    right:50%;
-    top:20px;
 }
 
 footer {
     text-align:center;
+    text-decoration:none;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+    background:#35353f;
 }
