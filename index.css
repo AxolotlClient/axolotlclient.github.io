@@ -6,10 +6,25 @@ main {
     text-align:center;
     min-height:90%;
     margin-bottom: -100px;
+    position:relative;
+    top:50px;
 }
 
 header {
     text-align:center;
+    position:fixed;
+    left:0px;
+    top:0px;
+    height:50px;
+    width:100%;
+    background:#35353f;
+}
+
+header .content{
+    text-size:24px;
+    position:absolute;
+    left: 50px;
+    top:10px;
 }
 
 footer {
