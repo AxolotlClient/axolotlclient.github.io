@@ -1,13 +1,8 @@
 
 
-function getDownloadLink(){
-    console.log(getPlatform())
-    return "https://github.com/AxolotlClient/Axolotlclient-launcher/releases/latest/"+getLatestVersion(getPlatform())
-}
-
 function init(){
-    var btn = document.getElementById("download")
-    btn.setAttribute('href', getDownloadLink())
+    setDownloadLink()
+    loadBg()
 }
 
 function getPlatform(){
@@ -17,25 +12,54 @@ function getPlatform(){
     } else if(appVersion.indexOf("Win")!=-1){
         return "windows"
     } else if(appVersion.indexOf("Mac")!=-1){
-        return "macos"
+        if(navigator.platform.indexOf("x86-64")!=-1){
+            return "macos-x64"
+        }
+        return "macos-arm64"
     }
 }
 
-function httpGet(Url) {
-    let text
-    axios.get(Url)
-    .then(data=>text=data)
+function getPlatformExtension(){
+    if(getPlatform() == "linux"){
+        return ".AppImage"
+    } else if(getPlatform() == "windows"){
+        return ".exe"
+    } else if (getPlatform() == "macos-x64"){
+        return "-x64.dmg"
+    } else if (getPlatform() == "macos-arm64"){
+        return "-arm64.dmg"
+    }
+    return "Unknown"
+}
+
+function setDownloadLink(){
+
+    fetch("https://api.github.com/repos/AxolotlClient/Axolotlclient-launcher/releases/latest",
+          {
+        headers: {
+            "Content-Type": "application/x-www-form-urlencocoded",
+        },
+        method: "GET"
+        }
+    )
+    .then(data=>data.json())
+    .then(data=>{
+
+        var version = data.tag_name.substring("1")
+        var btn = document.getElementById("download")
+        btn.setAttribute('href', "https://github.com/AxolotlClient/Axolotlclient-launcher/releases/download/"+data.tag_name+"/AxolotlClient-"+version+getPlatformExtension())
+        return data.tag_name
+    })
     .catch(err=>console.log(err))
-    return text
 }
 
-function getLatestVersion(platform){
-    if(platform=="linux"){
-        var text = httpGet("https://github.com/AxolotlClient/Axolotlclient-launcher/releases/download/latest/latest-linux.yml")
-    } else if(platform=="windows"){
-        var text = httpGet("https://github.com/AxolotlClient/Axolotlclient-launcher/releases/download/latest/latest.yml")
-    } else if(platform=="macos"){
-        var text = httpGet("https://github.com/AxolotlClient/Axolotlclient-launcher/releases/download/latest/latest-mac.yml")
-    }
-    return text.path
+function randomIntFromInterval(min, max) { // min and max included
+  return Math.floor(Math.random() * (max - min + 1) + min)
+}
+
+function loadBg(){
+    var img = document.getElementById("bg")
+    //console.log(img)
+     img.src = "images/"+randomIntFromInterval(0,8)+".jpg"
+    //document.body.style.backgroundImage = "url(images/"+randomIntFromInterval(1,4)+".jpg)"
 }

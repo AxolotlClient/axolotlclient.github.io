@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html lang="">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--     <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+<!--     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="index.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+
     <title>Axolotlclient</title>
+    <link rel="icon" type="image/x-icon" href="/images/icon.png">
   </head>
   <script src="index.js"></script>
   <body onLoad=init()>
 
-    <header>
-      <div class="content">
-        AxolotlClient
-      </div>
-    </header>
-    <main>
+
+
+    <img id="bg" src="images/1.jpg"  height="500px"/>
+    <div class="logo">
+      <img src="images/icon.png" width="70px" height="70px;"/>
+        <h1>Axolotl Client</h1>
+    </div>
+    <div class="content">
       <h1>A Free & Open-source Minecraft Client</h1>
 
-      <p>Download Now!</p>
-      <a id="download" href="">
-      <button>DOWNLOAD</button></a>
+      <a id="download" href=""> <!--Link is populated in JS to latest release + right platform-->
+      <button>Download Now</button></a>
+      <a id="other" href="https://github.com/AxolotlClient/Axolotlclient-launcher/releases/latest">
+      <button>Other Downloads</button></a>
+      <a id="gh" href="https://github.com/AxolotlClient/">
+      <button>View Github</button></a>
 
-    </main>
-    <footer>
-      <a href="https://github.com/AxolotlClient">Check out the GitHub page!</a>
-    </footer>
+    </div>
   </body>
 </html>
