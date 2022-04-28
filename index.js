@@ -26,6 +26,7 @@ function getPlatformName(){
         return "Windows"
     } else if (getPlatform() == "macos-x64" || getPlatform() == "macos-arm64"){
         return "MacOS"
+    }
     return ""
 }
 
