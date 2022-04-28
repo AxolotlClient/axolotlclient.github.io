@@ -19,6 +19,19 @@ function getPlatform(){
     }
 }
 
+function getPlatformName(){
+    if(getPlatform() == "linux"){
+        return "Linux"
+    } else if(getPlatform() == "windows"){
+        return "Windows"
+    } else if (getPlatform() == "macos-x64"){
+        return "MacOS x64"
+    } else if (getPlatform() == "macos-arm64"){
+        return "MacOS arm64"
+    }
+    return ""
+}
+
 function getPlatformExtension(){
     if(getPlatform() == "linux"){
         return ".AppImage"
@@ -32,7 +45,7 @@ function getPlatformExtension(){
     return "Unknown"
 }
 
-function setDownloadLink(){
+function setDownloadLink(){ // set the download link to point to the latest release on github for the user's current platform
 
     fetch("https://api.github.com/repos/AxolotlClient/Axolotlclient-launcher/releases/latest",
           {
@@ -47,8 +60,8 @@ function setDownloadLink(){
 
         var version = data.tag_name.substring("1")
         var btn = document.getElementById("download")
+        btn.innerHTML="<button>Download for "+getPlatformName()+"</button>"
         btn.setAttribute('href', "https://github.com/AxolotlClient/Axolotlclient-launcher/releases/download/"+data.tag_name+"/AxolotlClient-"+version+getPlatformExtension())
-        return data.tag_name
     })
     .catch(err=>console.log(err))
 }
@@ -59,7 +72,5 @@ function randomIntFromInterval(min, max) { // min and max included
 
 function loadBg(){
     var img = document.getElementById("bg")
-    //console.log(img)
      img.src = "images/"+randomIntFromInterval(0,8)+".jpg"
-    //document.body.style.backgroundImage = "url(images/"+randomIntFromInterval(1,4)+".jpg)"
 }
