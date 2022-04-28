@@ -24,11 +24,8 @@ function getPlatformName(){
         return "Linux"
     } else if(getPlatform() == "windows"){
         return "Windows"
-    } else if (getPlatform() == "macos-x64"){
-        return "MacOS x64"
-    } else if (getPlatform() == "macos-arm64"){
-        return "MacOS arm64"
-    }
+    } else if (getPlatform() == "macos-x64" || getPlatform() == "macos-arm64"){
+        return "MacOS"
     return ""
 }
 
