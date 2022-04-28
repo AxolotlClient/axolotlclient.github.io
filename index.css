@@ -27,6 +27,7 @@ body {
 button {
     width:200px;
     background-color: #aa00ff;
+    cursor:pointer;
     border: none;
     color: white;
     padding: 15px 32px;
