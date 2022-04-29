@@ -66,7 +66,7 @@ function setDownloadLink(){ // set the download link to point to the latest rele
             btn.innerHTML='<button class="download">All Downloads</button>'
             btn.setAttribute('href', "https://github.com/AxolotlClient/Axolotlclient-launcher/releases/latest/")
             var btn2 = document.getElementById("other")
-            btn2.visibility=false
+            btn2.visibility="hidden"
         }
     })
     .catch(err=>console.log(err))
