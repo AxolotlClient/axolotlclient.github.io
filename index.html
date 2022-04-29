@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="">
   <head>
-<!--     <link rel="preconnect" href="https://fonts.googleapis.com"> -->
-<!--     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="index.css">
@@ -16,23 +14,91 @@
   <script src="index.js"></script>
   <body onLoad=init()>
 
-
-
-    <img id="bg" src="images/1.jpg"  height="500px"/>
+    <img id="bg" src="images/8.jpg" height="500px" style="max-width: 100%;" />
     <div class="logo">
-      <img src="images/icon.png" width="70px" height="70px;"/>
+      <img src="images/icon.png" width="70px" height="70px"/>
         <h1>Axolotl Client</h1>
     </div>
     <div class="content">
+
       <h1>A Free & Open-source Minecraft Client</h1>
+      <a class="subtitle" href="https://minecraft.net/"><i>for Minecraft:Java Edition</i></a>
 
-      <a id="download" href=""> <!--Link is populated in JS to latest release + right platform-->
-      </a>
-      <a id="other" href="https://github.com/AxolotlClient/Axolotlclient-launcher/releases/latest">
-      <button>Other Downloads</button></a>
-      <a id="gh" href="https://github.com/AxolotlClient/">
-      <button>View Github</button></a>
+      <p>
+        <a id="download" href=""> <!--Link is populated in JS to latest release + right platform-->
+        </a>
+        <a id="other" href="https://github.com/AxolotlClient/Axolotlclient-launcher/releases/latest">
+         <i>Other Downloads</i>
+        </a>
 
+        <a id="why_client" href = "#why">
+        <button>Learn more</button></a>
+      </p>
+
+      <br>
+
+      <p>
+      <div  class="links">
+        <a id="about_client" href="#about">
+          <button>About</button>
+        </a>
+        <a id="gh" href="https://github.com/AxolotlClient/">
+          <button>View Github</button>
+        </a>
+        <a id="discord" href="https://discord.gg/9Q3brQVQZN">
+          <button>Join Discord</button>
+        </a>
+      </div>
+      </p>
+
+      <div class="why" id="why">
+      <h2>Why <b>Axolotl Client</b>?</h2>
+        <a class="reason" id="r1">
+          <h2>Open-Source</h2>
+
+          <p>The client is completely open-source for maximum<br> user comfort.</p>
+        </a>
+        <a class="reason" id="r2">
+          <h2>Customizable</h2>
+
+          <p>You can add your own mods to create <b>your own</b> Client.</p>
+        </a>
+        <a class="reason" id="r3">
+          <h2>Built on modern Mod Loaders</h2>
+
+          <p>We use the Fabric & Quilt Toolchains to provide the smoothest user experience possible.</p>
+        </a>
+      </div>
+
+      <br>
+
+      <div class="shots">
+      <h2>Screenshots</h2>
+
+      <img src="images/screenshot_settings.png" style="max-width: 90vw;">
+      <div class="desc">
+      <i>
+      In-Game Settings menu (1.8.9)
+      </i>
+      </div>
+
+      <br>
+      <div class="about" id="about">
+      <h1>About Axolotl Client</h1>
+
+      <p>
+        <b>Axolotl Client</b> was created due to my anger against blowing up Minecraft Clients like Lunar & Badlion, which<br>
+        (like you'd expect) are completely proprietary and locked-down. I wanted to give an example on how to do it better and<br>
+        started developing this in August 2021. In this form I created something what I had not seen anywhere before:<br>
+        A Free & Open-Source Minecraft Client
+        which even allows you to add your own mods for maximal customizability.
+        <br>
+        If you have any questions, suggestions or just want to say „hi“, feel free to join out discord with the link above.
+        <br>
+        ~ moehreag, Founder of Axolotl Client
+      </p>
+
+      </div>
     </div>
   </body>
 </html>

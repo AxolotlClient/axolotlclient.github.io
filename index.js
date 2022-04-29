@@ -57,9 +57,17 @@ function setDownloadLink(){ // set the download link to point to the latest rele
     .then(data=>{
 
         var version = data.tag_name.substring("1")
-        var btn = document.getElementById("download")
-        btn.innerHTML="<button>Download for "+getPlatformName()+"</button>"
-        btn.setAttribute('href', "https://github.com/AxolotlClient/Axolotlclient-launcher/releases/download/"+data.tag_name+"/AxolotlClient-"+version+getPlatformExtension())
+        if(getPlatformExtension()!="Unknown"){
+            var btn = document.getElementById("download")
+            btn.innerHTML='<button class="download">Download for '+getPlatformName()+'</button>'
+            btn.setAttribute('href', "https://github.com/AxolotlClient/Axolotlclient-launcher/releases/download/"+data.tag_name+"/AxolotlClient-"+version+getPlatformExtension())
+        } else {
+            var btn = document.getElementById("download")
+            btn.innerHTML='<button class="download">All Downloads</button>'
+            btn.setAttribute('href', "https://github.com/AxolotlClient/Axolotlclient-launcher/releases/latest/")
+            var btn2 = document.getElementById("other")
+            btn2.visibility=false
+        }
     })
     .catch(err=>console.log(err))
 }
