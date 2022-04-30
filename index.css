@@ -120,7 +120,27 @@ button:hover {
 }
 
 @media screen and (max-width: 700px) {
-  .content, .content .why, .content .links{
+    .content, .content .why, .content .links{
       width:100%;
-}
+    }
+
+    .content .why {
+        left: calc(50% - 45vw);
+    }
+
+    .logo {
+        bottom: 15vh;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .content .subtitle {
+        top: 50px;
+    }
+
+    .content .start_buttons {
+        margin-top:10px;
+    }
 }
