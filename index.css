@@ -23,7 +23,7 @@ a:hover {
 
 .logo {
     position: relative;
-    bottom: 450px;
+    bottom: 40vh;
     color: #ff007f;
     text-decoration: none;
 }
@@ -35,7 +35,7 @@ a:hover {
 }
 
 .content .subtitle {
-    block:inline;
+    display:flex;
     position:absolute;
     top:32px;
     left:calc(50% - 80px);
@@ -69,7 +69,7 @@ a:hover {
     position:relative;
     float: left;
     width: 250px;
-    height: 170px;
+    height: 270px;
     border:2px solid;
     border-color:#22ff88;
     background-color: #38384f;
@@ -88,9 +88,11 @@ a:hover {
     border-color:#ff95d6;
     color: #ff95d6;
     font-size: 17.6px;
-    height: 180px;
+    height: 280px;
     width: 270px;
-    margin-left:5px;
+    margin-left:0px;
+    margin-right: 0px;
+    margin-bottom:10px;
 }
 
 .content .shots {

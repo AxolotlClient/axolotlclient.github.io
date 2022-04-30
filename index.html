@@ -14,7 +14,7 @@
   <script src="index.js"></script>
   <body onLoad=init()>
 
-    <img id="bg" src="images/8.jpg" height="500px" style="max-width: 100%;" />
+    <img id="bg" src="images/8.jpg" style="max-width: 70%; max-height: 500px;" />
     <div class="logo">
       <img src="images/icon.png" width="70px" height="70px"/>
         <h1>Axolotl Client</h1>
@@ -25,8 +25,9 @@
       <a class="subtitle" href="https://minecraft.net/"><i>for Minecraft:Java Edition</i></a>
 
       <p>
-        <a id="download" href="https://github.com/AxolotlClient/Axolotlclient-launcher/releases/latest"> <!--Link is populated in JS to latest release + right platform-->
-        All downloads
+        <a id="download" href="https://github.com/AxolotlClient/Axolotlclient-launcher/releases/latest">
+        <!--Link is populated in JS to latest release + right platform-->
+        <button>View All Downloads</button>
         </a>
         <a id="other" href="https://github.com/AxolotlClient/Axolotlclient-launcher/releases/latest" style="visibility:hidden;">
          <i>Other Downloads</i>
@@ -53,21 +54,32 @@
       </p>
 
       <div class="why" id="why">
+      <br>
       <h2>Why <b>Axolotl Client</b>?</h2>
-        <a class="reason" id="r1">
+      <br>
+        <a class="reason" id="r1" href="https://github.org/Axolotlclient">
+        <img class="icon" src="images/github.svg" width="70px" height="70px">
           <h2>Open-Source</h2>
 
-          <p>The client is completely open-source for maximum<br> user comfort.</p>
+          <p>The client is completely open-source for maximum<br> user comfort.
+          All code is licensed under Free software licenses to allow user modifications.
+
+          </p>
         </a>
-        <a class="reason" id="r2">
+        <a class="reason" id="r2" href="https://modrinth.com">
+          <img src="images/modrinth.svg" height="70px" color="#00aa00">
           <h2>Customizable</h2>
 
-          <p>You can add your own mods to create <b>your own</b> Client.</p>
+          <p>You can add your own mods to create <b>your own</b> Client.
+          <br>
+          Create your own experience by downloading Axolotl Client now!
+          </p>
         </a>
-        <a class="reason" id="r3">
-          <h2>Built on modern Mod Loaders</h2>
+        <a class="reason" id="r3" href="https://quiltmc.org">
+          <img src="images/quilt.svg" height="70px">
+          <h2>Built on modern<br> Mod Loaders</h2>
 
-          <p>We use the Fabric & Quilt Toolchains to provide the smoothest user experience possible.</p>
+          <p>We use the most modern Loaders to get updates as soon as possible. This also speeds up<br> load times and facilitates developement.</p>
         </a>
       </div>
 
