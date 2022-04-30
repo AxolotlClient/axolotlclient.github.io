@@ -23,7 +23,7 @@ a:hover {
 
 .logo {
     position: relative;
-    bottom: 40vh;
+    bottom: 180px;
     color: #ff007f;
     text-decoration: none;
 }
@@ -38,18 +38,8 @@ a:hover {
     display:flex;
     position:absolute;
     top:32px;
-    left:calc(50% - 80px);
+    left:calc(50% - 90px);
     color: #aaaaaa;
-}
-
-.content #other {
-    position: relative;
-    right: 200px;
-    top: 35px;
-}
-
-.content .download {
-    width: 250px;
 }
 
 .content .about {
@@ -96,10 +86,9 @@ a:hover {
 }
 
 .content .shots {
-    display: table;
+    display: block;
     text-align:center;
     position:relative;
-    left: 4vw;
 }
 
 .content .shots .desc {

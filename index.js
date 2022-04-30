@@ -59,14 +59,14 @@ function setDownloadLink(){ // set the download link to point to the latest rele
         var version = data.tag_name.substring("1")
         if(getPlatformExtension()!="Unknown"){
             var btn = document.getElementById("download")
-            btn.innerHTML='<button class="download">Download for '+getPlatformName()+'</button>'
+            btn.innerHTML='<button class="download_button">Download for '+getPlatformName()+'</button>'
             btn.setAttribute('href', "https://github.com/AxolotlClient/Axolotlclient-launcher/releases/download/"+data.tag_name+"/AxolotlClient-"+version+getPlatformExtension())
 
             var btn2 = document.getElementById("other")
             btn2.style.visibility="visible"
         } else {
             var btn = document.getElementById("download")
-            btn.innerHTML='<button class="download">All Downloads</button>'
+            btn.innerHTML='<button class="download_button">All Downloads</button>'
             btn.setAttribute('href', "https://github.com/AxolotlClient/Axolotlclient-launcher/releases/latest/")
             var btn2 = document.getElementById("other")
             btn2.style.visibility="hidden"
