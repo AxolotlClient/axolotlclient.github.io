@@ -45,7 +45,9 @@ function getPlatformExtension(){
 
 function setDownloadLink(){ // set the download link to point to the latest release on github for the user's current platform
 
-    fetch("https://api.github.com/repos/AxolotlClient/Axolotlclient-launcher/releases/latest",
+    console.log("Launcher is not yet ready!")
+
+    /*fetch("https://api.github.com/repos/AxolotlClient/launcher/releases/latest",
           {
         headers: {
             "Content-Type": "application/x-www-form-urlencocoded",
@@ -60,19 +62,19 @@ function setDownloadLink(){ // set the download link to point to the latest rele
         if(getPlatformExtension()!="Unknown"){
             var btn = document.getElementById("download")
             btn.innerHTML='<button class="download_button">Download for '+getPlatformName()+'</button>'
-            btn.setAttribute('href', "https://github.com/AxolotlClient/Axolotlclient-launcher/releases/download/"+data.tag_name+"/AxolotlClient-"+version+getPlatformExtension())
+            btn.setAttribute('href', "https://github.com/AxolotlClient/launcher/releases/download/"+data.tag_name+"/AxolotlClient-Launcher-"+version+getPlatformExtension())
 
             var btn2 = document.getElementById("other")
             btn2.style.visibility="visible"
         } else {
             var btn = document.getElementById("download")
             btn.innerHTML='<button class="download_button">All Downloads</button>'
-            btn.setAttribute('href', "https://github.com/AxolotlClient/Axolotlclient-launcher/releases/latest/")
+            btn.setAttribute('href', "https://github.com/AxolotlClient/launcher/releases/latest/")
             var btn2 = document.getElementById("other")
             btn2.style.visibility="hidden"
         }
     })
-    .catch(err=>console.log(err))
+    .catch(err=>console.log(err))*/
 }
 
 function randomIntFromInterval(min, max) { // min and max included
