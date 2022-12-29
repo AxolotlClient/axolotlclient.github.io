@@ -83,5 +83,5 @@ function randomIntFromInterval(min, max) { // min and max included
 
 function loadBg(){
     var img = document.getElementById("bg")
-     img.src = "images/"+randomIntFromInterval(0,8)+".jpg"
+    //img.src = "images/"+randomIntFromInterval(0,8)+".jpg"
 }
