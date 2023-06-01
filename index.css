@@ -2,6 +2,19 @@ html {
     scroll-behavior: smooth;
   }
   
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    background: #3d3d3d;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #707070;
+  }
+  
   body {
     margin: 0px;
     font-family: "Fira Sans", sans-serif;
@@ -126,6 +139,7 @@ html {
     padding: 10px;
     float: left;
     width: 5vh;
+    
   }
   
   .navbar a:hover {
