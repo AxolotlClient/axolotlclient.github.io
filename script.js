@@ -17,10 +17,10 @@ const rootElem = document.documentElement;
 const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
 if (darkThemeMq.matches) {
   rootElem.setAttribute("data-theme", "dark");
-  document.getElementById("switcher").src = "images/sun-regular.svg";
+  document.getElementById("switcher").src = "images/sun.svg";
 } else {
   rootElem.setAttribute("data-theme", "light");
-  document.getElementById("switcher").src = "images/moon-regular.svg";
+  document.getElementById("switcher").src = "images/moon.svg";
 }
 
 const switchTheme = () => {
@@ -30,9 +30,9 @@ const switchTheme = () => {
   switchIcon = document.getElementById("switcher");
   rootElem.setAttribute("data-theme", newTheme);
   if (dataTheme === "dark") {
-    switcher.src = "images/moon-regular.svg";
+    switcher.src = "images/moon.svg";
   } else {
-    switcher.src = "images/sun-regular.svg";
+    switcher.src = "images/sun.svg";
   }
 };
 
