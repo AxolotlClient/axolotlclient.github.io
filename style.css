@@ -5,7 +5,7 @@
   --muted-text: #a4a4a4;
   --main-bg: #121212;
   --reason-bg: #38384f;
-  --navbar-bg: #00000080;
+  --navbar-bg: #000000cc;
   --navbar-hover-bg: #ffffff90;
   --navbar-hover-text: #000;
   --scrollbar-track: #3d3d3d;
@@ -22,9 +22,9 @@
   --muted-text: #9c9c9c;
   --reason-text: #fff;
   --navbar-text: #303030;
-  --main-bg: #dedede;
+  --main-bg: #fff;
   --reason-bg: #5a5a6b;
-  --navbar-bg: #ffffff80;
+  --navbar-bg: #f5f5f7cc;
   --navbar-hover-bg: #00000090;
   --navbar-hover-text: #fff;
   --scrollbar-track: #6c6c6c;
