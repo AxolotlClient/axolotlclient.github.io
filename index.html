@@ -1,83 +1,93 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="dark">
+  <head>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/icon.png" />
+    <link
+      href="https://fonts.bunny.net/css2?family=Fira+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AxolotlClient</title>
+  </head>
 
-<head>
-  <script defer src="script.js"></script>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="images/icon.png">
-  <link href="https://fonts.bunny.net/css2?family=Fira+Sans&display=swap" rel="stylesheet">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AxolotlClient</title>
-</head>
-
-<div class="navbar">
-  <div class="navbar-left">
-    <img src="images/icon.png" alt="Logo">
-    <a href="https://modrinth.com/mod/axolotlclient">Modrinth</a>
-    <a href="https://github.com/AxolotlClient/">GitHub</a>
-    <a href="https://discord.gg/WyMjeX3vka">Discord</a>
-  </div>
-  <div class="navbar-right"><img src="images/moon.svg" alt="" id="switcher"></div>
-</div>
-
-<body>
-  <div class="main">
-    <div class="buttons">
-      <img src="images/icon.png" alt="">
-      <h1>AxolotlClient</h1>
-      <h3>A Free & Open-source Minecraft Client</h3>
-      <a href="https://modrinth.com/mod/axolotlclient/versions#all-versions"><button class="tooltip">
-          Download</button></a>
-      <a href="https://modrinth.com/mod/axolotlclient/gallery"><button>Screenshots</button></a>
+  <div class="navbar">
+    <div class="navbar-left">
+      <a href="https://axolotlclient.com"
+        ><img src="images/icon.png" alt="Logo"
+      /></a>
+      <a class="text" href="https://modrinth.com/mod/axolotlclient">Modrinth</a>
+      <a class="text" href="https://github.com/AxolotlClient/">GitHub</a>
+      <a class="text" href="https://discord.gg/WyMjeX3vka">Discord</a>
+    </div>
+    <div class="navbar-right">
+      <img src="images/moon.svg" alt="" id="switcher" />
     </div>
   </div>
 
-  <div class="next__slide">
-    <h2>Why <em>AxolotlClient?</em></h2>
-    <div class="reasons">
-      <div class="reason">
-        <img class="icon" src="images/github.svg" width="70px" height="70px">
-        <h2>Open-Source</h2>
-        <p>
-          The client is completely open-source for maximum<br> user comfort.
-          All code is licensed under Free software licenses to allow user modifications.
-        </p>
-      </div>
-      <div class="reason">
-        <img src="images/modrinth.svg" height="70px" color="#00aa00">
-        <h2>Customizable</h2>
-        <p>
-          You can add your own mods to create <b>your own</b> Client.
-          <br>
-          Create your own experience by downloading AxolotlClient now!
-        </p>
-      </div>
-      <div class="reason">
-        <img src="images/quilt.svg" height="70px">
-        <h2>
-          Built on modern<br> Mod Loaders
-        </h2>
-        <p>
-          We use the most modern Loaders to get updates as soon as possible. This also speeds up<br> load times and
-          facilitates developement.
-        </p>
+  <body>
+    <div class="main">
+      <div class="buttons">
+        <img src="images/icon.png" alt="AxolotlClient logo" />
+        <h1>AxolotlClient</h1>
+        <h3>A Free & Open-source Minecraft Client</h3>
+        <a href="https://modrinth.com/mod/axolotlclient/versions#all-versions"
+          ><button class="tooltip">Download</button></a
+        >
+        <a href="https://modrinth.com/mod/axolotlclient/gallery"
+          ><button>Screenshots</button></a
+        >
       </div>
     </div>
-  </div>
-  <div class="about">
-    <h1>About</h1>
-    <p>AxolotlClient was created due to my anger against blowing up Minecraft Clients like Lunar & Badlion, which
-      (like you'd expect) are completely proprietary and locked-down. I wanted to give an example on how to do it better
-      and
-      started developing this in August 2021. In this form I created something what I had not seen anywhere before:
-      A Free & Open-Source Minecraft Client which even allows you to add your own mods for maximal customizability.
-      If you have any questions, suggestions or just want to say „hi“, feel free to join out discord with the link
-      above.
-      ~ moehreag, Founder of AxolotlClient</p>
-    <h5 class="warning">NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG.</h5>
-  </div>
-</body>
 
+    <div class="next__slide">
+      <h2>Why <em>AxolotlClient?</em></h2>
+      <div class="reasons">
+        <div class="reason">
+          <img
+            class="icon"
+            src="images/github.svg"
+            width="70px"
+            height="70px"
+          />
+          <h2>Open-Source</h2>
+          <p>
+            The client is completely open-source for maximum<br />
+            user comfort. All code is licensed under Free software licenses to
+            allow user modifications.
+          </p>
+        </div>
+        <div class="reason">
+          <img src="images/modrinth.svg" height="70px" color="#00aa00" />
+          <h2>Customizable</h2>
+          <p>
+            You can add your own mods to create <b>your own</b> Client.
+            <br />
+            Create your own experience by downloading AxolotlClient now!
+          </p>
+        </div>
+        <div class="reason">
+          <img src="images/quilt.svg" height="70px" />
+          <h2>
+            Built on modern<br />
+            Mod Loaders
+          </h2>
+          <p>
+            We use the most modern Loaders to get updates as soon as possible.
+            This also speeds up<br />
+            load times and facilitates developement.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="about">
+      <h5 class="warning">
+        NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH
+        MOJANG.
+      </h5>
+    </div>
+  </body>
 </html>
