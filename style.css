@@ -14,6 +14,8 @@
   --about-muted: var(--muted-text);
   --switcher-color: invert(100%) sepia(2%) saturate(122%) hue-rotate(243deg)
     brightness(113%) contrast(90%);
+  --highlight-color: #4ede00;
+  --highlight2-color: #007f04;
 }
 
 :root[data-theme="light"] {
@@ -33,6 +35,8 @@
   --about-muted: #808080;
   --switcher-color: invert(6%) sepia(1%) saturate(751%) hue-rotate(314deg)
     brightness(101%) contrast(71%);
+  --highlight-color: #0066ff;
+  --highlight2-color: #143398;
 }
 
 :root {
@@ -303,4 +307,12 @@ body {
   padding-right: 20px;
   padding-top: 50px;
   background-color: var(--main-bg);
+}
+
+.policy a:link {
+  color: var(--highlight-color);
+}
+
+.policy a:visited {
+  color: var(--highlight2-color);
 }
