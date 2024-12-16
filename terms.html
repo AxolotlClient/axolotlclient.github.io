@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <script>
+      async function load() {
+        await new Promise((r) => setTimeout(r, 500));
+        document.getElementById("policy").scrollIntoView();
+      }
+    </script>
+    <script defer="" src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/icon.png" />
+    <link
+      href="https://fonts.bunny.net/css2?family=Fira+Sans&amp;display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms - AxolotlClient</title>
+  </head>
+  <body onload="load()">
+    <div class="navbar">
+      <div class="navbar-left">
+        <a href="https://axolotlclient.com"
+          ><img src="images/icon.png" alt="Logo"
+        /></a>
+        <a class="text" href="https://modrinth.com/mod/axolotlclient"
+          >Modrinth</a
+        >
+        <a class="text" href="https://github.com/AxolotlClient/">GitHub</a>
+        <a class="text" href="https://discord.gg/WyMjeX3vka">Discord</a>
+      </div>
+      <div class="navbar-right">
+        <img src="images/moon.svg" alt="" id="switcher" />
+      </div>
+    </div>
+
+    <div class="main">
+      <img src="images/icon.png" alt="AxolotlClient icon" />
+      <h1>Terms</h1>
+    </div>
+    <div class="policy" id="policy">
+      <h3 class="primer">
+        These are the terms currently used by AxolotlClient:
+      </h3>
+
+      <h2>Terms of Service</h2>
+      Our terms of service are available here:
+      <a href="https://axolotlclient.com/tos">https://axolotlclient.com/tos</a>
+
+      <h2>Privacy policy</h2>
+      Our privacy policy is available here:
+      <a href="https://axolotlclient.com/privacy"
+        >https://axolotlclient.com/privacy</a
+      >
+      <div class="spacer" style="min-height: 60vh"></div>
+      <div class="about">
+        <h5 class="warning">
+          NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH
+          MOJANG.
+        </h5>
+      </div>
+    </div>
+  </body>
+</html>
