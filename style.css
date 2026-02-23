@@ -40,9 +40,10 @@
 }
 
 :root {
-  --default-transition: color 0.3s ease-in-out,
-    background-color 0.4s ease-in-out, border-color 0.3s ease-in-out,
-    fill 0.3s ease-in-out, transform 0.3s ease-in-out;
+  --default-transition:
+    color 0.3s ease-in-out, background-color 0.4s ease-in-out,
+    border-color 0.3s ease-in-out, fill 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
 }
 
 html {
@@ -108,8 +109,18 @@ body {
   color: var(--main-text);
   cursor: pointer;
   flex-shrink: 0;
-  font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+  font-family:
+    "Inter UI",
+    "SF Pro Display",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
     sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -225,6 +236,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.navbar-left {
+  overflow: auto;
 }
 
 .navbar {
